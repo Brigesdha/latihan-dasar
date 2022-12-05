@@ -1,0 +1,368 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-size: 15px;
+  font-family: verdana, sans-serif;
+  line-height: 1.5;
+}
+
+/* Untuk Projects, About, dan Contact */
+.box{
+  padding: 32px 16px;
+}
+
+/* Untuk h3 Projects, About, dan Contact */
+.judul-text{
+  margin: 10px 0;
+  padding: 16px 0;
+  font-weight: 400;
+  border-bottom: 1px solid #ccc;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+/* Untuk p pada About dan Contact */
+.paragraf{
+  margin: 15px 0;
+}
+
+
+/* Navbar */
+.navbar{
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+}
+
+.navbar .container{
+  padding: 8px 16px;
+  display: flex;
+  justify-content: space-between;
+  letter-spacing: 4px;
+
+}
+
+.navbar a{
+  color: black;
+  text-decoration: none;
+}
+
+.navbar a:hover{
+  background-color: #ccc;
+}
+
+.logo{
+  padding: 8px 16px;
+}
+
+.logo b{
+  letter-spacing: 4px;
+}
+
+.nav{
+  display: flex;
+  justify-content: center;
+}
+
+.nav a{
+  padding: 8px 16px;
+}
+
+
+/* Header */
+header{
+  position: relative;
+  text-align: center;
+}
+
+header img{
+  width: 100%;
+  height: 800px;
+}
+
+.text-img h1{
+  letter-spacing: 4px;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50% -50%);
+}
+
+header h1{
+  font-size: 36px;
+  margin: 10px 0;
+  text-align: center;
+  font-weight: 400;
+}
+
+span{
+  color: white;
+}
+
+.bold{
+  padding: 8px 16px;
+  opacity: 0.7;
+  background-color: #000;
+}
+
+
+/* Content */
+.page-content .container{
+  max-width: 1564px;
+  padding: 8px 16px;
+}
+
+
+/* Project */
+.images{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 8px;
+}
+
+.image{
+  padding: 0 8px;
+  margin-bottom: 16px;
+  width: 25%;
+}
+
+.house{
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-text{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 8px 16px;
+  background-color: black;
+  color: white;
+}
+
+.house img{
+  width: 100%;
+}
+
+
+/* About & Profiles */
+.profiles{
+  padding: 0 8px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.profile{
+  box-sizing: border-box;
+  padding: 0 8px;
+  margin-bottom: 16px;
+  width: 25%;
+}
+
+.profile img{
+  width: 100%;
+}
+
+.nama{
+  margin: 10px 0;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.jabatan{
+  margin: 15px 0;
+  opacity: 0.6;
+}
+
+.desriksi{
+  margin: 15px 0;
+}
+
+.tombol{
+  margin: 15px 0;
+}
+
+.profile button{
+  box-sizing: border-box;
+  font-size: 15px;
+  line-height: 22.5px;
+  padding: 8px 16px;
+  letter-spacing: 0.5px;
+  background-color: #f1f1f1;
+  color: black;
+  width: 100%;
+  text-transform: none;
+  border: none;
+  overflow: hidden;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  display: block;
+}
+
+.profile button:hover{
+  background-color: #ccc;
+}
+
+
+/* Contact */
+input{
+  font-size: 16px;
+  letter-spacing: 1px;
+  border: 1px solid #ccc;
+  padding: 8px;
+  display: block;
+  width: 100%;
+  overflow: visible;
+  line-height: 22.5px;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+input[name="email"], [name="subject"], [name="comment"]{
+  margin: 16px 0;
+}
+
+form button{
+  color: white;
+  background-color: black;
+  font-size: 18px;
+  margin: 16px 0;
+  padding: 8px 16px;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  display: inline-block;
+  text-decoration: none;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+}
+
+form button:hover{
+  background-color: #ccc;
+  color: black;
+}
+
+/* map */
+.map .container{
+  padding: 0.01em 16px;
+}
+
+.map img{
+  width: 100%;
+}
+
+/* Footer */
+footer{
+  background-color: black;
+  color: white;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+footer p{
+  margin: 15px auto;
+  text-align: center;
+}
+
+footer a{
+  color: white;
+}
+
+footer a:hover{
+  color: green;
+}
+
+
+/* Media Query */
+
+/* Tablet / Landscape */
+@media (max-width: 992px){
+  header{
+    max-width: 1500px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  header img{
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Project */
+  .images{
+    display: flex;
+  }
+
+  .image{
+    width: 50%;
+  }
+
+  /* Profile */
+  .profiles{
+    display: flex;
+  }
+
+  .profile{
+    width: 50%;
+  }
+}
+
+
+/* Phone */
+@media (max-width: 768px) {
+
+  /* navbar */
+  .nav{
+    display: none;
+  }
+
+  /* Header */
+  header{
+    max-width: 1500px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  header img{
+    max-width: 100%;
+    height: auto;
+  }
+
+  .text{
+    display: none;
+  }
+
+  /* Project */
+  .images{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image{
+    width: 100%;
+  }
+
+  /* Profile */
+  .profiles{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profile{
+    width: 100%;
+  }
+
+}

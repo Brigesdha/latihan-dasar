@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(180deg, #241bde, #af1bde 60%);
+    background-repeat: no-repeat;
+}
+
+@media (max-width :576px) {
+    .phone {
+        width: 80%;
+        height: 100%;
+        margin: auto;
+        border: 1px solid black;
+    }
+
+    .card {
+        width: 80%;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        background: linear-gradient(180deg, #241bde, #af1bde 60%);
+        border-radius: 10px;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 16px;
+        box-shadow: inset 5px 5px 5px rgba(0,0,0,0.5),
+                    5px 5px 5px rgba(0,0,0,0.5)
+    }
+
+    .container{
+        padding: 10px 15px;
+    }
+
+    .header{
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+
+    .header img{
+        width: 50%;
+        border-radius: 50%;
+        margin-bottom: 15px;
+    }
+
+    .username{
+        width: 100%;
+        border-bottom: 1px solid rgba(255,255,255,0.4);
+        margin: 5px 0 15px 0;
+    }
+
+    .form input[type=text]{
+        width: 100%;
+        display: block;
+        border: none;
+        outline: none;
+        background: none;
+        color: white;
+        font-size: 16px;
+    }
+
+    .password{
+        width: 100%;
+        border-bottom: 1px solid rgba(255,255,255,0.4);
+        margin: 5px 0 15px 0;
+    }
+
+    .form input[type=password]{
+        width: 100%;
+        display: block;
+        border: none;
+        outline: none;
+        background: none;
+        color: white;
+        font-size: 16px;
+    }
+
+    .confirm{
+        margin: 5px 0 15px 0;
+    }
+
+    button{
+        width: 100%;
+        padding: 10px 20px;
+        border-radius: 20px;
+        text-align: center;
+        cursor: pointer;
+        font-size: 16px;
+        background: linear-gradient(90deg, #241bde, #af1bde 60%);
+    }
+}

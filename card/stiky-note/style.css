@@ -1,0 +1,120 @@
+body {
+  margin: 20px auto;
+  font-family: 'Lato';
+  background:#666;
+  color:#fff;
+}
+
+*{
+  margin:0;
+  padding:0;
+}
+
+.container {
+  margin: 10px 20px;
+}
+
+h1 {
+  text-align: center;
+  margin: 15px auto;
+  font-weight: bold;
+  font-size: 5rem;
+}
+
+.card-body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 2rem;
+  flex-wrap: wrap;
+}
+
+.card-button .close {
+  color: red;
+}
+
+.card-button .more {
+  color: black;
+}
+
+.card-text {
+  font-family: 'Reenie Beanie';
+  font-size: 1.5rem;
+  font-weight: normal;
+  line-height: 1em;
+}
+
+ul,li{
+  list-style:none;
+}
+
+ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+ul li .card{
+  text-decoration:none;
+  color:#000;
+  background:#fff740;
+  display:block;
+  height:15em;
+  width:15em;
+  padding:1em;
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  transform: rotate(-6deg);
+}
+
+ul li{
+  margin:1em;
+}
+
+ul li:nth-child(even) .card{
+  transform:rotate(4deg);
+  position:relative;
+  top:5px;
+}
+ul li:nth-child(3n) .card{
+  transform:rotate(-3deg);
+  position:relative;
+  top:-5px;
+}
+ul li:nth-child(5n) .card{
+  transform:rotate(5deg);
+  position:relative;
+  top:-10px;
+}
+
+ul li .card:hover,ul li .card:focus{
+  box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  transform: scale(1.25);
+  position:relative;
+  z-index:5;
+}
+
+ul li .card{
+  text-decoration:none;
+  color:#000;
+  background:#fff740;
+  display:block;
+  height:13em;
+  width:13em;
+  padding:1em;
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  transition: transform .15s linear;
+}
+
+ul li:nth-child(even) .card{
+  position:relative;
+  top:5px;
+  background:#ff65a3;
+}
+ul li:nth-child(3n) .card{
+  position:relative;
+  top:-5px;
+  background:#7afcff;
+}

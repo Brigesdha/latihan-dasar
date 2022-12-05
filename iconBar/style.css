@@ -1,0 +1,51 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* Horizontal */
+
+.icon-bar-hr{
+  width: 100%;
+  background-color: #282629;
+  overflow: auto;
+  margin-bottom: 50px;
+}
+
+.icon-bar-hr a{
+ float: left;
+ width: 20%;
+ text-align: center;
+ padding: 12px 0;
+ transition: all 0.3s ease;
+ font-size: 36px;
+ color: white;
+}
+
+.icon-bar-hr a:hover{
+  background-color: #000;
+}
+
+.active{
+  background-color: #04AA6D;
+}
+
+/* Vertikal */
+
+.icon-bar-vt{
+  width: 90px;
+  background-color: #555;
+}
+
+.icon-bar-vt a{
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 36px;
+}
+
+.icon-bar-vt a:hover{
+  background-color: #000;
+}

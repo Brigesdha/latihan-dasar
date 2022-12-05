@@ -1,0 +1,37 @@
+#carouselExampleCaptions{
+    margin-bottom: 64px;;
+}
+
+.featurette-divider{
+    margin: 80px 0;
+}
+
+.order-md-2{
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    padding-top: var(--bs-gutter-y);
+}
+
+.order-md-1{
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    padding-top: var(--bs-gutter-y);
+}
+
+h2{
+    margin: 112px 0 8px;
+    font-weight: 400;
+    font-size: 50px;
+    letter-spacing: .05rem;
+    line-height: 50px;
+    margin-bottom: 8px;
+}
+
+p{
+    margin-bottom: 16px;
+}
+
+.featurette img{
+    width: 500px;
+    height: 500px;
+}

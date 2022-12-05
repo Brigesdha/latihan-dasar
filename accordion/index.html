@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Latihan membuat accordion</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <h2>Accordion</h2>
+
+    <button class="accodion">Section  1</button>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem eligendi praesentium doloribus pariatur quaerat quisquam consequuntur fugiat corporis excepturi provident vitae, animi, delectus a eum quia! Adipisci in soluta quibusdam et inventore, dignissimos id voluptate nemo dicta necessitatibus, assumenda libero ipsa consequatur suscipit nesciunt recusandae fugiat quidem animi tempora vel.</p>
+      </div>
+    <button class="accodion">Section  2</button>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque fugit repellat accusantium, sequi veniam obcaecati! Officiis tempora fuga ad minus rem ab maiores nam. Error explicabo est, sapiente reiciendis, laudantium asperiores laborum unde officia alias consequuntur accusamus, qui blanditiis possimus impedit odit cum rerum beatae repellat! Quaerat eligendi, at eveniet.</p>
+      </div>
+    <button class="accodion">Section  3</button>
+      <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum soluta, voluptate dolore. Itaque quam iste, cum id alias totam dolorem quia magnam labore illum eius aut sit saepe blanditiis numquam, voluptates velit mollitia. Quasi modi culpa rerum impedit, totam ratione laboriosam incidunt voluptas officia quo, porro illum doloribus, accusantium aliquam!</p>
+      </div>
+
+
+<script>
+  var acc = document.getElementsByClassName("accodion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+</script>
+  </body>
+</html>

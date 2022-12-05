@@ -1,0 +1,122 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: arial, sans-serif;
+  font-size: 18px;
+}
+
+
+/* Header */
+header{
+  background-color: #28FFBF;
+  color: white;
+  text-align: center;
+  padding: 90px;
+}
+
+header h1{
+  margin-bottom: 10px;
+}
+/* Akhir Header */
+
+
+/* Navbar */
+nav {
+  display: flex;
+  background-color: #000;
+  color: white;
+}
+
+
+a{
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding: 20px 110px;
+  overflow: hidden;
+}
+
+a:hover{
+  background-color: white;
+  color: #000;
+}
+/* Akhir Navbar */
+
+
+/* Content */
+.content{
+ display: flex;
+ flex-wrap: wrap;
+}
+/* Akhir Content */
+
+
+/* Aside */
+aside{
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+aside .profil{
+  width: 100%;
+  height: 60vh;
+  padding: 20px 0;
+}
+
+aside .more-image{
+  height: 30vh;
+  width: 100%;
+  padding: 5px;
+}
+/* Akhir Aside */
+
+
+
+/* Main */
+main{
+  flex: 70%;
+  padding: 20px;
+}
+
+main .title-2{
+  padding-top: 60px;
+}
+
+main .headline{
+  width: 100%;
+  height: 60vh;
+  padding: 20px 0;
+}
+/* Akhir Main */
+
+
+/* Footer */
+footer{
+  background-color: #1DB9C3;
+  text-align: center;
+  padding: 20px;
+}
+/* Akhir Footer */
+
+/* untuk aside dan main */
+h2, h3, p{
+  padding-bottom: 20px;
+}
+/* Akhir untuk aside dan main */
+
+
+/* Media query */
+
+@media screen and (max-width: 700px) {
+  .content, nav{
+    flex-direction: column;
+  }
+  nav{
+    text-align: center;
+  }
+}

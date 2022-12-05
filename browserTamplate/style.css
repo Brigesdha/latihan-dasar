@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* HEADER */
+header{
+    width: 100%;
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-kanan ul{
+    display: flex;
+}
+
+.menu-kanan ul li:hover{
+    background-color: #ddd;
+    color: #333;
+    cursor: pointer;
+}
+
+.menu-kanan ul li{
+    list-style-type: none;
+    padding: 12px 24px;
+}
+
+.menu-kiri span{
+    padding: 12px 24px;
+    cursor: pointer;
+}
+
+.menu-kiri span:hover{
+    background-color: rgb(219, 30, 30);
+}
+
+
+/* FIRST */
+.first{
+    background-image: url(wallpaperflare.com_wallpaper.jpg);
+    padding-top: 95vh;
+    padding-bottom: 5vh;
+    background-size: cover;
+    color: white;
+}
+
+.first .container{
+    text-align: center;
+}
+
+.first h2{
+    font-weight: normal;
+}
+
+.first p{
+    margin-top: 10px;
+}
+
+
+/* SECOND */
+.second{
+    min-height: 100vh;
+}
+
+.second .container{
+    width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.h2{
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    letter-spacing: 4px;
+}
+
+.italic{
+    color:rgb(190, 186, 171);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.second .text{
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 70px;
+}
+
+.gallery{
+    display: flex;
+    justify-content: space-evenly;
+    /* padding-bottom: 100px; */
+}
+
+.nama-foto p{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.nama-foto img{
+    width: 200px;
+}
+
+/* THIRD */
+.third{
+    background-color: black;
+    color: white;
+}
+
+.third .container{
+    width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.bulan{
+    padding-bottom: 30px;
+}
+
+.third ul{
+    width: 100%;
+    background-color: white;
+}
+
+.third ul li{
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+    color: #757575;
+    list-style-type: none;
+}
+
+.sold{
+    background-color: red;
+    color: white;
+    margin-left: 5px;
+    padding: 0 8px;
+}
+
+.bulat{
+    float: right;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    margin-right: 16px;
+    padding: 0 8px;
+}
+
+.wisata{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+}
+
+.liburan{
+    width: 300px;
+    background-color: white;
+    color: black;
+}
+
+.village{
+    margin: 0 15px;
+}
+
+.liburan img{
+    width: 100%;
+}
+
+.liburan img:hover{
+    filter: brightness(70%);
+}
+
+.isi{
+    padding: 0 16px;
+    font-size: 15px;
+}
+
+.isi .judul{
+    margin: 15px 0;
+    font-weight: bolder;
+}
+
+.isi .tanggal{
+    margin: 15px 0;
+    opacity: 0.6;
+}
+
+.isi .deskrip{
+    margin: 15px 0;
+    line-height: 1.5;
+}
+
+.isi button{
+    padding: 8px 16px;
+    background-color: black;
+    color: white;
+    margin-bottom: 16px;
+    border: none;
+    display: inline-block;
+    overflow: hidden;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.isi button:hover{
+    background-color: grey;
+    color: black;
+}
+
+/* FOURTH */
+.fourth .container{
+    width: 800px;
+    margin: 0 auto;
+    padding: 0 20px 80px;
+}
+
+.container .kontak{
+    padding: 32px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.kontak .lokasi{
+    font-size: 18px;
+}
+
+.lokasi p{
+    margin-bottom: 16px;
+}
+
+.box-nama{
+    padding: 0 8px 8px 0;
+    float: left;
+}
+
+.box-nama input{
+    padding: 8px;
+    width: 100%;
+}
+
+.box-email{
+    padding: 0 0 8px 8px;
+    float: right;
+}
+
+.box-email input{
+    padding: 8px;
+    width: 100%;
+}
+
+.box-message input{
+    padding: 8px;
+    width: 100%;
+}
+
+.button{
+    margin: 16px 0;
+    padding: 8px 16px;
+    float: right;
+    color: white;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button:hover{
+    background-color: grey;
+    color: black;
+}
+
+/* FIFTH */
+.fifth .container{
+    width: 90px;
+}
+
+footer{
+    padding: 64px 16px;
+    text-align: center;
+    font-size: 15px;
+    color: grey;
+}
+
+footer i{
+    padding: 0 5px;
+}
+
+footer p{
+    margin: 15px auto;
+}
